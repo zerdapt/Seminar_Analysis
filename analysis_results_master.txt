@@ -1,0 +1,81 @@
+=======================================================
+   SEMINAR ANALYSIS: MASTER REPORT (RQ1 - RQ4)
+=======================================================
+
+--- RQ1: EXTENT OF COVERAGE ---
+Total Models Analyzed: 158
+Documented Models:     137
+Global Adoption Rate:  86.71%
+
+Adoption by Creator:
+   Big Tech:    94.74%
+   Independent: 84.17%
+
+--- RQ4: DOMAIN ANALYSIS ---
+   Audio          : 100.00% (n=2)
+   Computer Vision: 83.33% (n=24)
+   Multimodal     : 100.00% (n=5)
+   NLP            : 86.36% (n=110)
+   Other          : 88.24% (n=17)
+
+--- RQ2: ETHICAL THEMES (Global) ---
+(Based on 137 documented models)
+   Bias & Fairness : 89 models (65.0%)
+   Safety & Misuse : 67 models (48.9%)
+   Privacy & PII   : 14 models (10.2%)
+   Environmental   : 9 models (6.6%)
+
+--- RQ3: TEMPORAL EVOLUTION ---
+   Pre-GenAI (2018-22): 90.00%
+   GenAI Era (2023-25): 85.94%
+
+Yearly Breakdown:
+   2018: 100.00%
+   2019: 100.00%
+   2020: 71.43%
+   2021: 100.00%
+   2022: 85.71%
+   2023: 88.00%
+   2024: 84.34%
+   2025: 90.00%
+
+=======================================================
+             DEEP DIVE ANALYSIS (CROSS-TABS)
+=======================================================
+
+1. HOW DID THE CONVERSATION CHANGE? (Themes by Era)
+(% of documented models in that era discussing the topic)
+
+   [Bias & Fairness]
+      GenAI Era (2023-25): 65.5%
+      Pre-GenAI (2018-22): 63.0%
+
+   [Safety & Misuse]
+      GenAI Era (2023-25): 52.7%
+      Pre-GenAI (2018-22): 33.3%
+
+   [Privacy & PII]
+      GenAI Era (2023-25): 10.9%
+      Pre-GenAI (2018-22): 7.4%
+
+   [Environmental]
+      GenAI Era (2023-25): 6.4%
+      Pre-GenAI (2018-22): 7.4%
+
+2. CORPORATE vs. INDEPENDENT PRIORITIES (Themes by Creator)
+
+   [Bias & Fairness]
+      Big Tech    : 77.8%
+      Independent : 60.4%
+
+   [Safety & Misuse]
+      Big Tech    : 58.3%
+      Independent : 45.5%
+
+   [Privacy & PII]
+      Big Tech    : 16.7%
+      Independent : 7.9%
+
+   [Environmental]
+      Big Tech    : 0.0%
+      Independent : 8.9%

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.8)  7 JAN 2026 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.8)  7 JAN 2026 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/zerda/Seminar_Analysis/MyThesisStructure.tex
-(/Users/zerda/Seminar_Analysis/MyThesisStructure.tex
+**/Users/zerda/Seminar_Analysis/thesis/MyThesisStructure.tex
+(/Users/zerda/Seminar_Analysis/thesis/MyThesisStructure.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/article.cls
@@ -308,12 +308,12 @@ L3 programming layer <2025-01-18>
  ) 
 Here is how much of TeX's memory you used:
  4246 strings out of 474662
- 68598 string characters out of 5751110
+ 68619 string characters out of 5751110
  472686 words of memory out of 5000000
  27230 multiletter control sequences out of 15000+600000
  572545 words of font info for 60 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 68i,15n,67p,1529b,403s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 68i,15n,67p,1536b,403s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
 Output written on MyThesisStructure.pdf (19 pages, 619305 bytes).
 PDF statistics:

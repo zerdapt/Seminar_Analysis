@@ -1,8 +1,8 @@
-PWD /Users/zerda/Seminar_Analysis
+PWD /Users/zerda/Seminar_Analysis/thesis
 INPUT /usr/local/texlive/2025basic/texmf.cnf
 INPUT /usr/local/texlive/2025basic/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025basic/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/zerda/Seminar_Analysis/MyThesisStructure.tex
+INPUT /Users/zerda/Seminar_Analysis/thesis/MyThesisStructure.tex
 OUTPUT MyThesisStructure.log
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/article.cls

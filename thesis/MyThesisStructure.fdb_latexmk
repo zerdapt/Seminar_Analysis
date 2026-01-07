@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex MyThesisStructure"] 1767799516.90054 "MyThesisStructure.aux" "MyThesisStructure.bbl" "MyThesisStructure" 1767799517.14327 0
+["bibtex MyThesisStructure"] 1767799802.58162 "MyThesisStructure.aux" "MyThesisStructure.bbl" "MyThesisStructure" 1767799802.82247 0
   "./references.bib" 1767798691.23481 6019 145221518d21305a3f7bb777a427e866 ""
   "/usr/local/texlive/2025basic/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "MyThesisStructure.aux" 1767799517.07396 5513 77f02f0c38746e837b80fdbe583a1257 "pdflatex"
+  "MyThesisStructure.aux" 1767799802.75384 5513 77f02f0c38746e837b80fdbe583a1257 "pdflatex"
   (generated)
   "MyThesisStructure.bbl"
   "MyThesisStructure.blg"
   (rewritten before read)
-["pdflatex"] 1767799516.9114 "/Users/zerda/Seminar_Analysis/thesis/MyThesisStructure.tex" "MyThesisStructure.pdf" "MyThesisStructure" 1767799517.14335 0
+["pdflatex"] 1767799802.59468 "/Users/zerda/Seminar_Analysis/thesis/MyThesisStructure.tex" "MyThesisStructure.pdf" "MyThesisStructure" 1767799802.82255 0
   "/Users/zerda/Seminar_Analysis/thesis/MyThesisStructure.tex" 1767799351.94972 42066 9c210f0315037ed70baa82a459154a42 ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -84,8 +84,8 @@
   "/usr/local/texlive/2025basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1754692538 363432 9332a346fd2969c241468fd5c5a9a9c2 ""
   "/usr/local/texlive/2025basic/texmf-var/web2c/pdftex/pdflatex.fmt" 1754686408 2663836 e9d8b92454237eee3a957880731e4a18 ""
   "/usr/local/texlive/2025basic/texmf.cnf" 1741448314 628 81d1ada0f601fb1ffa62f1323192d946 ""
-  "MyThesisStructure.aux" 1767799517.07396 5513 77f02f0c38746e837b80fdbe583a1257 "pdflatex"
-  "MyThesisStructure.bbl" 1767799516.91045 3548 535c7c2dbf02dc319cea4bc1c52cab11 "bibtex MyThesisStructure"
+  "MyThesisStructure.aux" 1767799802.75384 5513 77f02f0c38746e837b80fdbe583a1257 "pdflatex"
+  "MyThesisStructure.bbl" 1767799802.59364 3548 535c7c2dbf02dc319cea4bc1c52cab11 "bibtex MyThesisStructure"
   "MyThesisStructure.tex" 1767799351.94972 42066 9c210f0315037ed70baa82a459154a42 ""
   "figures/background.pdf" 1767798691.23143 10247 662668d2cb1d60fa4491ba7eeb4fdfd9 ""
   "figures/logoDepartment.pdf" 1767798691.23282 308327 fd2b8d10b16504b6710864097c0df50a ""

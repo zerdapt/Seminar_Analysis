@@ -15,9 +15,6 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/ansinew.def
-INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/ansinew.def
-INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/ansinew.def
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/graphics/keyval.sty
@@ -64,6 +61,8 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./MyThesisStructure.aux
@@ -109,9 +108,7 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm
-INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
-INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -120,6 +117,15 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
+INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./figures/methodology_workflow.png
+INPUT ./figures/methodology_workflow.png
+INPUT ./figures/methodology_workflow.png
+INPUT ./figures/methodology_workflow.png
+INPUT ./figures/methodology_workflow.png
+INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 INPUT ./MyThesisStructure.bbl
 INPUT ./MyThesisStructure.bbl
 INPUT MyThesisStructure.bbl
@@ -129,8 +135,10 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx12
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb
+INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb
+INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb

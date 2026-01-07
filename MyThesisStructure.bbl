@@ -1,3 +1,65 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{arnold2019factsheets}
+Matthew Arnold, Rachel Bellamy, Michael Hind, Stephanie Houde, Sameep Mehta, Aleksandra Mojsilovic, Ravi Nair, Karthikeyan Natesan~Ramamurthy, Alexandra Olteanu, David Piorkowski, Darrell Reimer, John Richards, Kush Varshney, and Jason Tsay.
+\newblock Factsheets: Increasing trust in ai services through supplier's declarations of conformity.
+\newblock {\em IBM Journal of Research and Development}, PP:1--1, 09 2019.
+
+\bibitem{bhat2023aspirations}
+Avinash Bhat, Austin Coursey, Grace Hu, Sixian Li, Nadia Nahar, Shurui Zhou, Christian K\"{a}stner, and Jin~L.C. Guo.
+\newblock Aspirations and practice of ml model documentation: Moving the needle with nudging and traceability.
+\newblock In {\em Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems}, CHI '23, New York, NY, USA, 2023. Association for Computing Machinery.
+
+\bibitem{bommasani2022opportunitiesrisksfoundationmodels}
+Rishi Bommasani, Drew~A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney von Arx, Michael~S. Bernstein, Jeannette Bohg, and Antoine~Bosselut et~al.
+\newblock On the opportunities and risks of foundation models, 2022.
+
+\bibitem{gebru2018datasheets}
+Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer Vaughan, Hanna Wallach, Hal Daumé, III, and Kate Crawford.
+\newblock Datasheets for datasets.
+\newblock {\em Communications of the ACM}, 64, 03 2018.
+
+\bibitem{hagendorff2020ethics}
+Thilo Hagendorff.
+\newblock The ethics of ai ethics: An evaluation of guidelines.
+\newblock {\em Minds and Machines}, 30, 03 2020.
+
+\bibitem{jobin2019globallandscape}
+Anna Jobin, Marcello Ienca, and Effy Vayena.
+\newblock The global landscape of ai ethics guidelines.
+\newblock {\em Nature Machine Intelligence}, 1, 09 2019.
+
+\bibitem{mitchell2019model}
+Margaret Mitchell, Simone Wu, Andrew Zaldivar, Parker Barnes, Lucy Vasserman, Ben Hutchinson, Elena Spitzer, Inioluwa Raji, and Timnit Gebru.
+\newblock Model cards for model reporting.
+\newblock pages 220--229, 01 2019.
+
+\bibitem{kothandapani2025aidriven}
+Hariharan Pappil~Kothandapani.
+\newblock Ai-driven regulatory compliance: Transforming financial oversight through large language models and automation.
+\newblock 3:12--24, 01 2025.
+
+\bibitem{raji2020closing}
+Inioluwa Raji, Andrew Smart, Rebecca White, Margaret Mitchell, Timnit Gebru, Ben Hutchinson, Jamila Smith-Loud, Daniel Theron, and Parker Barnes.
+\newblock Closing the ai accountability gap: Defining an end-to-end framework for internal algorithmic auditing, 01 2020.
+
+\bibitem{schwartz2020green}
+Roy Schwartz, Jesse Dodge, Noah Smith, and Oren Etzioni.
+\newblock Green ai.
+\newblock {\em Communications of the ACM}, 63:54--63, 11 2020.
+
+\bibitem{strubell2019energy}
+Emma Strubell, Ananya Ganesh, and Andrew Mccallum.
+\newblock Energy and policy considerations for deep learning in nlp.
+\newblock pages 3645--3650, 01 2019.
+
+\bibitem{weidinger2021ethical}
+Laura Weidinger, John Mellor, Maribeth Rauh, Conor Griffin, Jonathan Uesato, Po-Sen Huang, Myra Cheng, Mia Glaese, Borja Balle, Atoosa Kasirzadeh, Zac Kenton, Sasha Brown, Will Hawkins, Tom Stepleton, Courtney Biles, Abeba Birhane, Julia Haas, Laura Rimell, Lisa Hendricks, and Iason Gabriel.
+\newblock Ethical and social risks of harm from language models, 12 2021.
+
+\bibitem{werthner2023digital}
+H.~Werthner, Allison Stanger, Viola Schiaffonati, Peter Knees, Lynda Hardman, and Carlo Ghezzi.
+\newblock Digital humanism: The time is now.
+\newblock {\em Computer}, 56:138--142, 01 2023.
 
 \end{thebibliography}

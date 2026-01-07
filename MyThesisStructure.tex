@@ -6,14 +6,15 @@
 \documentclass[a4paper, 12pt, twppages]{article}
 
 \usepackage[T1]{fontenc}
-\usepackage[ansinew]{inputenc} % auf Zeichencodierung der Datei achten! In TeXnicCenter im "Speichern Unter"-Dialog 'ANSI' ausw�hlen.
-%\usepackage[utf8]{inputenc} % alternative Zeichencodierung 'UTF-8'
+%\usepackage[ansinew]{inputenc} % auf Zeichencodierung der Datei achten! In TeXnicCenter im "Speichern Unter"-Dialog 'ANSI' auswhlen.
+\usepackage[utf8]{inputenc} % alternative Zeichencodierung 'UTF-8'
 
 \usepackage{graphicx}%% IMAGE PACKAGE
 \usepackage{eso-pic}%% PACKAGE FOR THE BACKGROUNDPIC
 \usepackage{fancyhdr}%% PACKAGE FOR THE HEADERS AND FOOTERS
 \usepackage{pdfpages}%% PACKAGE TO INCLUDE A PDF FILE
 \usepackage{parskip} %% Adds vertical space between paragraphs and removes indentation
+\usepackage{float} %% PACKAGE FOR EXACT PLACEMENT
 
 \newcommand\BackgroundPic{%
 \put(0,0){%
@@ -63,7 +64,7 @@
 \bigskip
 
 %% WRITE YOUR Studienkennzahl
-{\noindent\large {\bf Studienkennzahl:} J123456789}
+{\noindent\large {\bf Studienkennzahl:} UJ 033 561}
 \bigskip
 
 %% WRITE THE NAME OF YOUR SUPERVISOR
@@ -106,24 +107,28 @@ The governance framework for artificial intelligence (AI) systems frequently lag
 \section{Introduction}
 \label{introduction}
 
-Ethical documentation serves as the primary resource to understand and evaluate opaque algorithmic systems when adopting them in critical domains. Machine-learned (ML) models increasingly are scrutinized as components of social infrastructure and would benefit from rigorous transparency (Mitchell et al., 2019; Bhat et al., 2023). Stakeholders resort to the documentation to answer questions such as what social biases are present, what limitations to expect, and what environmental and safety impacts to consider once the model is deployed at scale. Nevertheless, ML models shared as open-weights repositories or proprietary services are often inconsistently documented. Serious issues related to the opacity of ML models have been observed in various applications, notably in discriminatory hiring, biometric surveillance, and excessive energy consumption, leading to broader concerns about their alignment with Digital Humanism and social justice (Werthner et al., 2022).
+Ethical documentation serves as the primary resource to understand and evaluate opaque algorithmic systems when adopting them in critical domains. Machine-learned (ML) models increasingly are scrutinized as components of social infrastructure and would benefit from rigorous transparency (Mitchell et al., 2019 s~\cite{mitchell2019model}; Bhat et al., 2023 s~\cite{bhat2023aspirations}). Stakeholders resort to the documentation to answer questions such as what social biases are present, what limitations to expect, and what environmental and safety impacts to consider once the model is deployed at scale. Nevertheless, ML models shared as open-weights repositories or proprietary services are often inconsistently documented. Serious issues related to the opacity of ML models have been observed in various applications, notably in discriminatory hiring, biometric surveillance, and excessive energy consumption, leading to broader concerns about their alignment with Digital Humanism and social justice (Werthner et al., 2022 s~\cite{werthner2023digital}).
 
-As a reaction to observed problems in ML model transparency, significant efforts towards documenting models and datasets have been proposed. The Model Cards framework proposed by Mitchell et al. (2019) has become a standard, and the popular model hosting site HuggingFace has adopted the term model card. Yet, it is largely unknown how the semantic quality of these proposals has impacted the practice of documenting ML models and their undocumented costs, such as environmental impact.
+As a reaction to observed problems in ML model transparency, significant efforts towards documenting models and datasets have been proposed. The Model Cards framework proposed by Mitchell et al. \cite{mitchell2019model} has become a standard, alongside similar initiatives such as Datasheets for Datasets (Gebru et al., \cite{gebru2018datasheets}) and frameworks for internal algorithmic auditing (Raji et al., \cite{raji2020closing}). As well as the popular model hosting site HuggingFace, which has adopted the term model card. Yet, it is largely unknown how the semantic quality of these proposals has impacted the practice of documenting ML models and their undocumented costs, such as environmental impact.
 
-In this work, we systematically study ML model documentation in the field and investigate how to encourage more responsible and holistic model documentation practice. While past work has shown limited documentation during model development (Bhat et al., 2023), we focus on the semantic content of ethical reporting for reusable ML models. We start by investigating how the ML models are documented, how they meet the ethical requirements within the model cards template proposed by Mitchell et al. (2019). Our study reveals that despite adopting the model card terminology, most model development teams fail to provide balanced and transparent documentation that can support scrutiny for ecological accountability. Certain aspects of documentation are especially limited across different contexts of model creators, such as information regarding the environmental impact.
+In this work, we systematically study ML model documentation in the field and investigate how to encourage more responsible and holistic model documentation practice. While past work has shown limited documentation during model development (Bhat et al., \cite{bhat2023aspirations}), we focus on the semantic content of ethical reporting for reusable ML models. We start by investigating how the ML models are documented, how they meet the ethical requirements within the model cards template proposed by Mitchell et al. \cite{mitchell2019model}. Our study reveals that despite adopting the model card terminology, most model development teams fail to provide balanced and transparent documentation that can support scrutiny for ecological accountability. Certain aspects of documentation are especially limited across different contexts of model creators, such as information regarding the environmental impact.
 
 We explore how we could assess the evolution of documentation standards and encourage truthful reporting practices. To this end, we analyze a curated dataset of 158 models, released between 2018 and 2025. A comparative analysis of these epochs demonstrates that, when Generative AI was introduced, data scientists adopted documentation approaches that prioritized safety and misuse concerns over process transparency. They also showed less deliberate consideration of environmental costs compared to social biases.
 Our work makes the following contributions to understanding and supporting ML model documentation practice: (1) Delineation of the current practice of public model cards highlighting a clear gap between the social transparency provided by corporate actors and the ecological opacity maintained by the same developers; (2) A typology of ethical considerations, identified and used in our study based on the model cards proposal, which can be adopted by model auditors as a framework for detecting "greenwashing" or selective ethics; (3) A longitudinal analysis, covering the "Pre-Generative" and "Generative AI" eras, to support researchers to understand and critique the regression in documentation completeness during the recent industry expansion.
 
 The artifacts created in this study including the coded dataset, list of assessed model cards, and analysis scripts, are shared as supplementary materials alongside the paper to support future investigation on improving ML documentation.
 
+\paragraph{Declaration of AI Use.}
+During the preparation of this work, we utilized Large Language Models (Gemini) to assist with the following: \LaTeX\ typesetting, code generation for the analysis outputs and stylistic refinement and the initial planing stage to ensure that academic standards are upkept. The conceptualization, data analysis, and interpretation of findings remain the sole work of the authors.
+
+
 \section{Related Work}
 \label{related-work}
 
 \subsection{Definitions and peculiarities of the problem}
-A difficult problem with evaluation in many real-world domains is that the performance of interest may depend on some hidden context, not given explicitly in the form of global accuracy. A typical example is facial recognition error rates that may vary radically with the demographic subgroup. Another example is the patterns of toxicity detection that may change with context, depending on the dialect, cultural background, or specific terminology used. Often the cause of failure is hidden, not known a priori, making the auditing task more complicated. Changes in the hidden context can induce more or less radical changes in the target reliability, which is generally known as bias (Mitchell et al., 2019). An effective documentation framework should be able to track such changes and to quickly expose them.
+A difficult problem with evaluation in many real-world domains is that the performance of interest may depend on some hidden context, not given explicitly in the form of global accuracy. A typical example is facial recognition error rates that may vary radically with the demographic subgroup. Another example is the patterns of toxicity detection that may change with context, depending on the dialect, cultural background, or specific terminology used. Often the cause of failure is hidden, not known a priori, making the auditing task more complicated. Changes in the hidden context can induce more or less radical changes in the target reliability, which is generally known as bias (Mitchell et al., \cite{mitchell2019model}). An effective documentation framework should be able to track such changes and to quickly expose them.
 
-To validate this approach, Mitchell et al. (2019) applied the Model Cards framework to benchmarks such as the CelebA dataset, demonstrating that while models achieved high global accuracy, disaggregated reporting revealed error rates as high as 30\% in specific subgroups. Thus, an ideal documentation system should be able to: (1) quickly adapt to subgroup performance; (2) be robust to aggregate metrics; and (3) recognize and treat hidden failure modes. To this end, Mitchell et al. propose nine distinct sections to ensure accountability:
+To validate this approach, Mitchell et al. \cite{mitchell2019model} proposeapplied the Model Cards framework to benchmarks such as the CelebA dataset, demonstrating that while models achieved high global accuracy, disaggregated reporting revealed error rates as high as 30\% in specific subgroups. Thus, an ideal documentation system should be able to: (1) quickly adapt to subgroup performance; (2) be robust to aggregate metrics; and (3) recognize and treat hidden failure modes. To this end, Mitchell et al. \cite{mitchell2019model} propose nine distinct sections to ensure accountability:
 
 \begin{itemize}
     \item \textbf{Model Details:} Lists basic metadata about the model, including the release date, version, architecture type, license, responsible parties, and citation information.
@@ -140,17 +145,17 @@ To validate this approach, Mitchell et al. (2019) applied the Model Cards framew
 \subsection{Types of documentation standards}
 Although previous conceptual frameworks and guidance for documentation have included the user perspective, key contextual and goal-related distinctions have not been fully discussed. To close this gap, the literature normally distinguishes between two kinds of documentation standards: (1) output-focused (Model Cards), and (2) lifecycle-focused (FactSheets).
 
-The framework by Arnold et al. (2019), FactSheets, relies on theories of supplier conformity and highlights specific elements of the data lineage that support auditing processes. Unlike Model Cards, which focus heavily on the final model output, FactSheets argue for documenting the entire lifecycle, including data provenance, cleaning, and testing methodologies. Although useful for identifying documentation elements to support specific safety-critical audits, this model shares a common limitation with other academic proposals: it relies on voluntary adherence by developers. This may lead to a lack of usability and practical interpretability of these documents for real end-users.
+The framework by Arnold et al. \cite{arnold2019factsheets}, FactSheets, relies on theories of supplier conformity and highlights specific elements of the data lineage that support auditing processes. Unlike Model Cards, which focus heavily on the final model output, FactSheets argue for documenting the entire lifecycle, including data provenance, cleaning, and testing methodologies. Although useful for identifying documentation elements to support specific safety-critical audits, this model shares a common limitation with the broader landscape of ethical AI guidelines (Jobin et al. \cite{jobin2019globallandscape}; Hagendorff \cite{hagendorff2020ethics}): it relies on voluntary adherence by developers. This may lead to a lack of usability and practical interpretability of these documents for real end-users.
 
 \subsection{Systems for handling documentation practice}
-Prior work has tried to create categories of documentation to define transparency needs, but, as discussed in Bhat et al. (2023), practice often deviates from theory. Bhat et al. distinguish two approaches in available repositories: (1) technical metadata recording and (2) qualitative ethical discussion.
+Prior work has tried to create categories of documentation to define transparency needs, but, as discussed in Bhat et al. \cite{bhat2023aspirations}, practice often deviates from theory. Bhat et al. distinguish two approaches in available repositories: (1) technical metadata recording and (2) qualitative ethical discussion.
 
-Current evaluation studies provide insight into how developers prioritize these approaches. Bhat et al. (2023) show in their experiments that qualitative ethical discussion handles transparency worse than analogous technical metadata techniques, which is likely due to the ``Traceability Gap.'' Their empirical analysis showed that while technical metadata is almost always present, qualitative sections are frequently treated as noise. Specifically, they found that the ``Ethical Considerations'' section was missing or empty in a statistically significant portion of the sample. This implies that unless developers are explicitly nudged, they prioritize technical reproducibility over ethical transparency.
+Current evaluation studies provide insight into how developers prioritize these approaches. Bhat et al. \cite{bhat2023aspirations} show in their experiments that qualitative ethical discussion handles transparency worse than analogous technical metadata techniques, which is likely due to the ``Traceability Gap.'' Their empirical analysis showed that while technical metadata is almost always present, qualitative sections are frequently treated as noise. Specifically, they found that the ``Ethical Considerations'' section was missing or empty in a statistically significant portion of the sample. This implies that unless developers are explicitly nudged, they prioritize technical reproducibility over ethical transparency.
 
 \subsection{Base risks for handling environmental accountability}
 Researchers in the HCI and ML communities have proposed frameworks for user-centered design in documentation. This literature focuses mainly on who the documentation is provided to, the stakeholder, and why they require it,the specific verification goals. While these are important elements in understanding the context of use of a model, little attention seems to be paid to where or when users require documentation regarding ecological impact.
 
-These questions relate to the environment in which a model is expected to operate. In the real world, risks may often be ecological, e.g., only particular types of carbon footprints may change with scale. In the case of Generative AI, many traditional templates are discarded simply because their coverage on current risks falls. The landscape of documentation requirements has been fundamentally altered by the advent of Foundation Models (2023--2025). Bommasani et al. (2021) note that the move towards large-scale generative models has rendered the supply chain more opaque. Furthermore, Weidinger et al. (2021) argue that Large Language Models (LLMs) introduce specific risks, specifically highlighting environmental impact. They note that traditional documentation often fails to capture carbon footprint benchmarks. Motivated by these evolving risks, we seek to address whether current documentation practices have adapted to capture the ecological costs inherent to Generative AI.
+These questions relate to the environment in which a model is expected to operate. In the real world, risks may often be ecological, e.g., only particular types of carbon footprints may change with scale, with ealry studies highlighting that a single training run can emit as much CO2 as five cars over their lifetimes (Strubell et al., \cite{strubell2019energy}). This reflects a growing dominance of what Schwartz et al. \cite{schwartz2020green} calls  "Red AI". This systems buyss incremental performance improvements at the cost of massive power and energy consumption. In the case of Generative AI, many traditional templates are discarded simply because their coverage on current risks falls. The landscape of documentation requirements has been fundamentally altered by the advent of Foundation Models (2023--2025). Bommasani et al. \cite{bommasani2022opportunitiesrisksfoundationmodels} note that the move towards large-scale generative models has rendered the supply chain more opaque. Furthermore, Weidinger et al. \cite{weidinger2021ethical} argue that Large Language Models (LLMs) introduce specific risks, specifically highlighting environmental impact. They note that traditional documentation often fails to capture carbon footprint benchmarks. Motivated by these evolving risks, we seek to address whether current documentation practices have adapted to capture the ecological costs inherent to Generative AI.
 
 
 \section{Methodology Framework}
@@ -161,7 +166,7 @@ The Hugging Face Hub is an open online repository that provides metadata for mac
 
 When using the Hugging Face Hub for research, data are retrieved from the ``Model Card'' feature, which allows access to real-time metadata from 2018 up to the present. The data are retrieved directly from repository files in .json or markdown format after the examined model repositories are identified and the task, period, and creator type are selected. By default, the selection is filtered for models with significant download counts and citation history.
 
-The data are stratified over the selected time frame as follows: Each data point is categorized by the model modality and the epoch it represents to compare relative documentation quality. Otherwise, domains with the most upload volume would always be ranked highest. The resulting observations are scaled based on a section's proportion to all documented ethical considerations.
+The data are stratified over the selected time frame as follows: Each data point is categorized by the model modality and the epoch it represents to compare relative documentation quality. Otherwise, domains with the most upload volume would always be ranked highest. The observations are scaled based on a section's proportion to all documented ethical considerations.
 
 The stratification indicates that results vary by institutional and temporal context. The value 0 for environmental reporting indicates very low disclosure volumes that are not included in the results. The process excludes placeholder entries that contain special characters or generic phrases. The Hub does not have an enforcement filter for ethical content, but it prompts users to complete sections related to bias and safety. It allows retrieval of documentation's normalized adherence for any model entered, independent of creator type.
 
@@ -171,6 +176,19 @@ The framework allows for various combinations to compare different terms and era
     \item For the same theme in different modalities, such as ``Environmental Impact'' in NLP and Computer Vision.
     \item For different themes in the same creator group, such as ``Bias,'' ``Safety,'' ``Privacy,'' and ``Environment'' in Independent Developers.
 \end{itemize}
+
+
+
+
+\begin{figure}[htbp]
+    \vspace{0.5cm}
+    \centering
+    \includegraphics[width=\textwidth]{figures/methodology_workflow.png}
+    \caption{\textbf{Methodological Framework Overview.} 
+    The workflow illustrates the data harvesting process from the Hugging Face Hub, the stratification logic (by Creator, Domain, and Era), and the dictionary-based content analysis used to derive ethical adoption rates.}
+    \label{fig:workflow}
+    \vspace{0.5cm}
+\end{figure}
 
 When themes, modalities, periods, and creators are defined, the outputs are a distribution of the variations in documentation adherence over the selected time frame, presented separately for all examined domains; all datasets can be analyzed using descriptive statistics.
 
@@ -198,7 +216,7 @@ The developers' difficulty in maintaining balanced documentation was a common fe
 
 Of 158 models identified, 137 met inclusion criteria (86.71\%), while the remaining either lacked ethical considerations sections or were left undocumented. In Table \ref{tab:overview}, we can clearly observe the extent of coverage and adoption organized by creator type.
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \caption{Extent of Coverage and Adoption by Creator Type (RQ1)}
     \label{tab:overview}
@@ -218,17 +236,17 @@ Of 158 models identified, 137 met inclusion criteria (86.71\%), while the remain
     \end{tabular}
 \end{table}
 
-In Fig. 7, we can clearly observe the distribution of model documentation organized by model creator and domain. In the diagram we can clearly observe two things:
+In our cross-case analysis,we can clearly observe the distribution of model documentation organized by ethical theme and era. In the ddata we can clearly observe two things:
 
-There is more visual separation between the Independent trials than the other two. With the exception of a relatively small number of outliers, many of the Independent models were correctly identified as containing environmental disclosures. Hence, if the trial is actually an independent repository then it will probably be identified as such.
+There is distinct divergence between the Independent models and the other categories. With the exception of a relatively small number of outliers, many of the Independent models were found to contain environmental disclosures. Hence, if the repository is actually independent, then it will be probably mor elikely to exhibit transparency regarding ecoligical costs.
 
-The Major Tech and Generative AI trials tend to be spread over an area centred around social bias and safety. At best, approximately 65.0\% of these trials have been correctly populated. The distribution does not seem to have the kind of separation seen for the environmental trials, suggesting that they have difficulty documenting ecological costs, but could tell that social risks had varied.
+The Major Tech and Generative AI documentation tends to concentrate around social bias and safety. At best, approximately 65.0\% of these models have been populated with these specific ethical considerations. The distribution does not show the kind of holistic coverage seen for the multimodal models, suggesting that developers have difficulty documenting ecological costs, but could clearly prioritize social risks.
 
 \subsection{Analysis and interpretation}
 
 The documentation adherence for different model domains is given in Table \ref{tab:domains}. They show similar measures for correctly identifying hazards in text-heavy domains; however, Computer Vision documentation exhibited lower adherence at 83.33\%.
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \caption{Documentation Adherence by Model Domain (RQ4)}
     \label{tab:domains}
@@ -245,11 +263,11 @@ The documentation adherence for different model domains is given in Table \ref{t
     \end{tabular}
 \end{table}
 
-The mean scores recorded for all models are given in Table \ref{tab:themes}. They show similar measures for correctly identifying Bias and Safety: both have mean scores indicating high adherence in the Generative era, with the confusion being predominantly between which of the two social risk controllers is operating. The Environmental Impact trials have a higher tendency to be omitted, with a score of 0.0\% for corporate actors.
+The mean scores recorded for all models are given in Table \ref{tab:themes}. They show similar measures for correctly identifying Bias and Safety: both have mean scores indicating high adherence in the Generative era, with the confusion being predominantly between which of the two social risk categories is prioritized. The Environmental Impact sections have a higher tendency to be omitted, with a score of 0.0\% for corporate actors.
 
 Each Major Tech model in the experiment had a higher score for identifying Bias than the other categories. It appears that Environmental Impact is the least identifiable of the three and the confusion tends to be between the social and safety sections. For analysis purposes, we can express the findings as polarized decisions. There is confusion between Bias and Safety, whereas the Environmental trials were identified only 8.9\% of the time in the independent sample.
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \caption{Typology of Ethical Considerations (RQ2)}
     \label{tab:themes}
@@ -265,11 +283,39 @@ Each Major Tech model in the experiment had a higher score for identifying Bias 
     \end{tabular}
 \end{table}
 
+\noindent \textbf{To substantiate these quantitative findings with qualitative evidence, Table \ref{tab:examples} provides representative excerpts from the analyzed documentation. These examples contrast the liability-focused language of Major Tech actors with the specific, albeit often incomplete, carbon reporting found in independent repositories.}
+
+\begin{table}[H]
+    \centering
+    \caption{Representative Examples of Ethical Documentation (Excerpt from Dataset)}
+    \label{tab:examples}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{l|l|p{10cm}}
+        \hline
+        \textbf{Model} & \textbf{Creator Type} & \textbf{Verbatim Excerpt from Documentation} \\
+        \hline
+        Llama-3.2 & Meta & ``Testing conducted to date has not covered, nor could it cover, all scenarios. For these reasons, as with all LLMs, Llama 3.2’s potential outputs cannot be predicted in advance, and the model may in some instances produce inaccurate, biased or other objectionable responses to user prompts. Therefore, before deploying any applications of Llama 3.2 models, developers should perform safety testing and tuning tailored to their specific applications of the model. Please refer to available resources including our Responsible Use Guide, Trust and Safety solutions, and other resources to learn more about responsible development.'' \\
+        \hline
+        Stable-Diffusion-v-1-4 & CreativeML OpenRAIL M license & ``The model should not be used to intentionally create or disseminate images that create hostile or alienating environments for people. This includes generating images that people would foreseeably find disturbing, distressing, or offensive; or content that propagates historical or current stereotypes.'' \\
+        \hline
+        bert-base-multilingual & Apache 2.0. & ``Even if the training data used for this model could be characterized as fairly neutral, this model can have biased predictions. This bias will also affect all fine-tuned versions of this model.'' \\
+        \hline
+        ESG-BERT & Independent & ``Carbon emissions can be estimated using the Machine Learning Impact calculator presented in Lacoste et al. (2019). Hardware Type: More information needed Hours used: More information needed Cloud Provider: information needed Compute Region: More information needed Carbon Emitted: More information needed'' \\
+        \hline
+    \end{tabular}
+    }
+    \small
+    \vspace{0.1cm}
+    \begin{center}
+    \textit{Note: Excerpts are direct quotations from the analyzed Model Cards (Hugging Face, 2025).}
+    \end{center}
+\end{table}
+
 \subsection{Comparative tests}
 
 In order to test the distinguishability of one epoch or creator from the other, we performed a frequency analysis, calculated over all 158 models. Comparing the Pre-Generative Era and the Generative AI Era, we get the results shown in Table \ref{tab:crosscase}. A significant difference is found in the developers' identification of safety risks. Whilst the Generative AI era shares the characteristic of having variable documentation quality and thus is not identifiable simply by trying to detect a lack of README files, we would expect that if there was a ``regression'' characteristic to the GenAI response, then the auditor would be able to identify the era. It appeared that, generally, there was such a characteristic and adoption rates for safety increased substantially from 33.3\% to 52.7\%, while institutional environmental disclosures for Big Tech remained at 0.0\%.
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \caption{Cross-Case Comparison: Temporal Shifts and Creator Priorities (RQ3 \& Deep Dive)}
     \label{tab:crosscase}
@@ -291,7 +337,7 @@ In order to test the distinguishability of one epoch or creator from the other, 
 
 \subsection{Ratings}
 
-In addition to the identification of the themes for each trial, we also asked each participant (auditor) to rate each model with respect to how well it had worked as a transparent system. The Generative AI models were consistently rated worse than the Pre-Generative ones. The differences between the Pre-Generative ratings and the others were found to be significant.
+In addition to the identification of the themes for each trial, we also asked each auditor to rate each model with respect to how well it had worked as a transparent system. The Generative AI models were consistently rated worse than the Pre-Generative ones. The differences between the Pre-Generative ratings and the others were found to be significant.
 
 This analysis of documentation ratings is a relatively traditional evaluation, in line with Likert-scale approaches. Our results demonstrate that the framework of the empirical audit allows for such evaluation, but also adds the extra dimension of direct comparison with a human-centered standard (Digital Humanism). It is encouraging that not only did the independent developers generally receive a higher rating for environmental transparency, but that their performance was sufficiently distinct to confuse auditors as to which was a corporate mandate and which was an organic disclosure. This suggests that ethically the independent sector is performing its task well.
 
@@ -310,14 +356,14 @@ Firstly, the content analysis can extract a detailed reconstruction of the devel
 
 However, we see evidence that the discourses obtained are influenced by the industrial context: the independent repositories, structured with less corporate oversight, produced discourse directly acknowledging carbon footprints; while the Big Tech actors, though more rigorous in formatting, produced restricted discourse with zero mention of environmental costs in our sample. It is clear that the design of documentation frameworks requires a careful balance: templates should be designed to encourage holistic transparency, while taking care not to lead developers into a ``compliance checklist'' mentality that prioritizes brand safety over invisible costs.
 
-Secondly, the longitudinal analysis can produce a quantitative result on whether the industry is progressing towards the standards of Digital Humanism---despite the fact that we cannot evaluate such alignment directly. Our time-series study found that developers exhibited significant regression in documentation completeness between the Pre-Generative Era and the GenAI Era. Quantity ratings alone might suggest a robust ecosystem, but the semantic data tell us more: that the rapid expansion of Generative AI achieves its aim of rapid deployment at the cost of the meticulous documentation standards seen in earlier phases.
+Secondly, the longitudinal analysis can produce a quantitative result on whether the industry is progressing towards the standards of Digital Humanism,despite the fact that we cannot evaluate such alignment directly. Our time-series study found that developers exhibited significant regression in documentation completeness between the Pre-Generative Era and the GenAI Era. Quantity ratings alone might suggest a robust ecosystem, but the semantic data tell us more: that the rapid expansion of Generative AI achieves its aim of rapid deployment at the cost of the meticulous documentation standards seen in earlier phases.
 
 Our findings reflect two realities, corporate and independent; but further, they illustrate two philosophical attitudes. The major actors derive high adoption rates for social bias sections, but at the cost of imposing a predetermined, risk-averse conceptual framework onto the documentation, excluding environmental impact. Our analysis of the ``Modality Bias'' represents a fairly strong reactive attitude in which the key risks are determined by the media cycle (e.g., text toxicity) rather than the inherent risks of the technology (e.g., computer vision surveillance).
 
 Having explored our findings, we are in a position to compare and contrast them with aspirations proposed by other investigators, and then to work towards recommendations on the applicability of different documentation strategies to different contexts.
 
 \subsection{Comparison with other approaches}
-A useful point of comparison is the original proposal due to Mitchell et al. (2019), involving nine distinct sections to ensure accountability. As previously discussed, this approach raises issues of selective adoption. Indeed, Bhat et al. (2023) investigate the documentation practice and find technical metadata to be present while qualitative ethical sections are treated as noise. Our findings extend this by revealing that even when ethical sections are present, they are ``Ethically Cherry-Picked.'' The purely voluntary adherence method may therefore only be appropriate to cases in which the developer has intrinsic motivation to be transparent.
+A useful point of comparison is the original proposal due to Mitchell et al. \cite{mitchell2019model}, involving nine distinct sections to ensure accountability. As previously discussed, this approach raises issues of selective adoption. Indeed, Bhat et al. \cite{bhat2023aspirations} investigate the documentation practice and find technical metadata to be present while qualitative ethical sections are treated as noise. Our findings extend this by revealing that even when ethical sections are present, they are ``Ethically Cherry-Picked.'' The purely voluntary adherence method may therefore only be appropriate to cases in which the developer has intrinsic motivation to be transparent.
 
 One advantage of the current voluntary method is that it is quick to administer. However, our study reveals that this results in a ``Traceability Gap.'' A third alternative, which is worthy of further exploration, is to gather data via automated extraction. Analogies between the software engineering context (CI/CD pipelines) and the model training context suggest that methods could be adopted for automatically logging carbon metrics. However, there are some issues which would need to be addressed:
 
@@ -326,6 +372,7 @@ One advantage of the current voluntary method is that it is quick to administer.
     \item The evaluative role of ``Brand Safety'' also needs clarification: the high prevalence of Bias warnings suggests a focus on liability, but this is unlikely to be the whole story regarding model safety.
 \end{itemize}
 
+A third alternative, which would also be worthy of further exploration, is to gather data via automated extraction. This is explained further in the work by Kotilainen et al. \cite{kothandapani2025aidriven}, where the suggestion is made about model cards serving as building blocks for automated compliance checks. Moving away from manual regulatory reporting.
 \section{Recommendations and Future Work}
 \label{recommendations}
 From our studies, we suggest that an investigator or policy-maker wishing to formally evaluate or improve machine learning documentation should consider the following:
@@ -349,5 +396,35 @@ We hope that our recommendations (Section \ref{recommendations}) may be a useful
 
 \bibliographystyle{plain}
 \bibliography{references}
+
+\section*{List of Aids Used}
+
+In accordance with the course guidelines, Table~\ref{tab:aids} details the specific application of AI and software tools in the creation of this research paper.
+
+\begin{table}[h]
+    \centering
+    \caption{Declaration of AI and Software Tools Used}
+    \label{tab:aids}
+    \vspace{0.3cm}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{l|p{5cm}|l|p{5cm}}
+        \hline
+        \textbf{Tool Used} & \textbf{Type of Use} & \textbf{Sections} & \textbf{Documentation (e.g., prompt strategy)} \\
+        \hline
+        Gemini & Code Generation & Methodology, Results & Used to generate Python scripts for data processing and \LaTeX\ code for table visualizations. \\
+        \hline
+        Gemini & Stylistic Refinement & All & Used to check grammar, tone consistency ("too formal/serious"), and sentence logic throughout the manuscript. \\
+        \hline
+        Gemini & Research Planning & Introduction, Methodology & Used in the initial phase to map out the paper structure and validate the relevance and fit of selected references. \\
+        \hline
+        DeepL & Translation \& Synonyms & All & Used to translate concepts from German to English and find  appropriate synonyms. \\
+        \hline
+        diagrams.net & Visualization & Methodology & Used to manually create the workflow diagram (Figure~\ref{fig:workflow}) visualizing the research methodlogoy \\
+        \hline
+    \end{tabular}
+    }
+\end{table}
+
+
 
 \end{document}

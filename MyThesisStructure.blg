@@ -2,47 +2,53 @@ This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: MyThesisStructure.aux
 The style file: plain.bst
-I found no \citation commands---while reading file MyThesisStructure.aux
 Database file #1: references.bib
-You've used 0 entries,
+Warning--entry type for "weidinger2021ethical" isn't style-file defined
+--line 54 of file references.bib
+Warning--entry type for "raji2020closing" isn't style-file defined
+--line 72 of file references.bib
+Warning--empty booktitle in mitchell2019model
+Warning--empty journal in kothandapani2025aidriven
+Warning--empty booktitle in strubell2019energy
+You've used 13 entries,
             2118 wiz_defined-function locations,
-            497 strings with 4017 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            566 strings with 7092 characters,
+and the built_in function-call counts, 5969 in all, are:
+= -- 506
+> -- 507
+< -- 2
++ -- 203
+- -- 188
+* -- 518
+:= -- 1049
+add.period$ -- 37
+call.type$ -- 13
+change.case$ -- 133
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 16
+duplicate$ -- 155
+empty$ -- 321
+format.name$ -- 188
+if$ -- 1165
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 13
+missing$ -- 10
+newline$ -- 65
+num.names$ -- 26
+pop$ -- 145
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 120
 quote$ -- 0
-skip$ -- 1
+skip$ -- 124
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 191
+swap$ -- 32
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+type$ -- 52
+warning$ -- 3
+while$ -- 34
+width$ -- 15
+write$ -- 135
+(There were 5 warnings)

@@ -6,9 +6,6 @@ This repository contains the code and data analysis for the research paper **"Di
 Here the documentation quality of **158 Machine Learning models** released between 2018 and 2025 gets analyzed. When it comes to the technical part, it involves a Python script that processes the aggregated metadata, so the developers documentation about the ethical risks can be evaluated. Specifically, it investigates the "Greenwashing Paradox" (prioritizing social bias over environmental impact) as well as the "GenAI Regression" (a drop in documentation standards during the recent generative AI boom). The analysis compares **Big Tech vs. Independent** developers and the **Pre-GenAI vs. GenAI** eras.
 
 ### Milestones
-
-- Definition of Research Questions (RQ1 - RQ4) regarding ethical coverage and transparency
-- Collection of metadata for 158 models into `aggregated_data_final.xlsx`
 - Development of analysis script to process data and detect keywords
 - Implementation of "Smart Ethics Check" to filter out placeholder documentation (e.g., "N/A")
 - Stratification of data by Creator (Big Tech vs. Independent) and Era (Pre-GenAI vs. GenAI)

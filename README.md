@@ -3,7 +3,7 @@
 ### About the project
 This repository contains the code and data analysis for the research paper **"Digital Humanism or Empty Promises? A Longitudinal Analysis of Ethical Reporting in Model Cards"**.
 
-Here the documentation quality of **158 Machine Learning models** released between 2018 and 2025 gets analyzed. When it comes to the technical part, it involves a Python script that processes the aggregated metadata, so the developers documentation about the ethical risks can be evaluated. Specifically, it investigates the "Greenwashing Paradox" (prioritizing social bias over environmental impact) as well as the "GenAI Regression" (a drop in documentation standards during the recent generative AI boom). The analysis compares **Big Tech vs. Independent** developers and the **Pre-GenAI vs. GenAI** eras.
+Here the documentation quality of **160 Machine Learning models** released between 2018 and 2025 gets analyzed. When it comes to the technical part, it involves a Python script that processes the aggregated metadata, so the developers documentation about the ethical risks can be evaluated. Specifically, it investigates the "Greenwashing Paradox" (prioritizing social bias over environmental impact) as well as the "GenAI Regression" (a drop in documentation standards during the recent generative AI boom). The analysis compares **Big Tech vs. Independent** developers and the **Pre-GenAI vs. GenAI** eras.
 
 ### Milestones
 - Development of analysis script to process data and detect keywords

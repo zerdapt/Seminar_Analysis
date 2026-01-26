@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.8)  7 JAN 2026 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.8.8)  26 JAN 2026 01:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -301,12 +301,12 @@ Overfull \hbox (48.92834pt too wide) in paragraph at lines 50--52
 
 
 
-<figures/logoDepartment.pdf, id=80, 324.2514pt x 72.9927pt>
+<figures/logoDepartment.pdf, id=88, 324.2514pt x 72.9927pt>
 File: figures/logoDepartment.pdf Graphic file (type pdf)
 <use figures/logoDepartment.pdf>
 Package pdftex.def Info: figures/logoDepartment.pdf  used on input line 84.
 (pdftex.def)             Requested size: 97.27617pt x 21.89796pt.
-<figures/background.pdf, id=81, 597.50786pt x 845.04686pt>
+<figures/background.pdf, id=89, 597.50786pt x 845.04686pt>
 File: figures/background.pdf Graphic file (type pdf)
 <use figures/background.pdf>
 Package pdftex.def Info: figures/background.pdf  used on input line 84.
@@ -322,38 +322,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
 [2]
 
-[3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 123.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 123.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 123.
-
+[3{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [4]
 
-[5{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[5]
 
 [6]
+Overfull \hbox (1.34154pt too wide) in paragraph at lines 209--210
+[]\T1/cmr/m/n/12 Furthermore, Wei-dinger et al. [[]] ar-gue that Large Lan-guage Mod-els (LLMs)
+ []
+
+
 
 [7]
-<figures/methodology_workflow.png, id=167, 683.55376pt x 161.60374pt>
-File: figures/methodology_workflow.png Graphic file (type png)
-<use figures/methodology_workflow.png>
-Package pdftex.def Info: figures/methodology_workflow.png  used on input line 187.
-(pdftex.def)             Requested size: 390.0pt x 92.20386pt.
+
+[8]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 255.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 255.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 255.
+
+Overfull \hbox (4.11612pt too wide) in paragraph at lines 262--263
+[]\T1/cmr/m/n/12 This strat-i-fi-ca-tion was per-formed pro-gram-mat-i-cally us-ing a keyword-matching
+ []
 
 
-[8 <./figures/methodology_workflow.png>]
+Overfull \hbox (8.63268pt too wide) in paragraph at lines 262--263
+\T1/cmr/m/it/12 `ope-nai', `ama-zon', `ap-ple', `ibm', `sta-bil-ityai', `deep-mind', `sales-force', `adobe',
+ []
+
+
 
 [9]
 
 [10]
+<figures/methodology_workflow.png, id=197, 683.55376pt x 161.60374pt>
+File: figures/methodology_workflow.png Graphic file (type png)
+<use figures/methodology_workflow.png>
+Package pdftex.def Info: figures/methodology_workflow.png  used on input line 305.
+(pdftex.def)             Requested size: 390.0pt x 92.20386pt.
 
-[11]
+
+[11 <./figures/methodology_workflow.png>]
 
 [12]
+Overfull \hbox (2.15424pt too wide) in paragraph at lines 333--334
+\T1/cmr/m/n/12 adop-tion rate of 94.74%, while In-de-pen-dent cre-ators, of-ten community-driven,
+ []
+
+
 
 [13]
 
@@ -362,72 +382,77 @@ Package pdftex.def Info: figures/methodology_workflow.png  used on input line 18
 [15]
 
 [16]
-Overfull \hbox (5.09508pt too wide) in paragraph at lines 392--393
+Overfull \hbox (5.09508pt too wide) in paragraph at lines 502--503
 \T1/cmr/m/n/12 Traditional gov-er-nance frame-works for ar-ti-fi-cial in-tel-li-gence sys-tems fre-quently
  []
 
-(./MyThesisStructure.bbl
+
+
+[17] (./MyThesisStructure.bbl
 Underfull \hbox (badness 1584) in paragraph at lines 4--7
 \T1/cmr/m/n/12 san Ra-ma-murthy, Alexan-dra Olteanu, David Pi-orkowski, Dar-rell
  []
 
 
 
-[17]
-
 [18])
-Underfull \hbox (badness 10000) in paragraph at lines 426--426
+Underfull \hbox (badness 10000) in paragraph at lines 536--536
 []\T1/cmr/bx/n/12 Documentation (e.g.,
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 426--426
+Underfull \hbox (badness 1389) in paragraph at lines 536--536
 []\T1/cmr/m/n/12 Used to gen-er-ate Python
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 426--426
+Underfull \hbox (badness 2662) in paragraph at lines 536--536
 []\T1/cmr/m/n/12 Used to check gram-mar,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--426
+Underfull \hbox (badness 10000) in paragraph at lines 536--536
 \T1/cmr/m/n/12 tone con-sis-tency ("too
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 426--426
+Underfull \hbox (badness 2409) in paragraph at lines 536--536
 \T1/cmr/m/n/12 from Ger-man to En-glish
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 426--426
+Underfull \hbox (badness 2521) in paragraph at lines 536--536
 []\T1/cmr/m/n/12 Used to man-u-ally cre-ate
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19] (./MyThesisStructure.aux)
+
+
+[19]
+
+[20] (./MyThesisStructure.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `MyThesisStructure.out' has not changed.
-(rerunfilecheck)             Checksum: B655247839C0E30287EF34CAE4F36EF4;3311.
+(rerunfilecheck)             Checksum: 061A78A4CF78EA40D6A5965D968A3C0F;3999.
  ) 
 Here is how much of TeX's memory you used:
- 10653 strings out of 474662
- 168439 string characters out of 5751110
- 575396 words of memory out of 5000000
- 33488 multiletter control sequences out of 15000+600000
- 572545 words of font info for 60 fonts, out of 8000000 for 9000
+ 10651 strings out of 474662
+ 168419 string characters out of 5751110
+ 573421 words of memory out of 5000000
+ 33487 multiletter control sequences out of 15000+600000
+ 571856 words of font info for 59 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 69i,15n,79p,1536b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on MyThesisStructure.pdf (19 pages, 624954 bytes).
+ 69i,15n,79p,938b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on MyThesisStructure.pdf (20 pages, 599556 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
+ 334 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
  66 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 
